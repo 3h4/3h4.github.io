@@ -23,17 +23,6 @@ const config = {
     locales: ['en'],
   },
 
-  plugins: [
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        redirects: [
-          {from: '/', to: '/docs/intro'},
-        ],
-      },
-    ],
-  ],
-
   presets: [
     [
       'classic',
