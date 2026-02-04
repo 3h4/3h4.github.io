@@ -23,6 +23,17 @@ const config = {
     locales: ['en'],
   },
 
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {from: '/', to: '/docs/intro'},
+        ],
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
@@ -32,10 +43,7 @@ const config = {
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/3h4/3h4.github.io/tree/main/',
         },
-        blog: {
-          showReadingTime: true,
-          editUrl: 'https://github.com/3h4/3h4.github.io/tree/main/',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -48,6 +56,9 @@ const config = {
     ({
       navbar: {
         title: 'PhD Docs',
+        logo: {
+          href: '/docs/intro',
+        },
         items: [
           {
             type: 'docSidebar',
@@ -55,7 +66,6 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/3h4/3h4.github.io',
             label: 'GitHub',
