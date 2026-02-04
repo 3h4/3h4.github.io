@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://3h4.github.io/blog</id>
+    <title>PhD Documentation Blog</title>
+    <updated>2025-02-04T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://3h4.github.io/blog"/>
+    <subtitle>PhD Documentation Blog</subtitle>
+    <entry>
+        <title type="html"><![CDATA[Welcome]]></title>
+        <id>https://3h4.github.io/blog/welcome</id>
+        <link href="https://3h4.github.io/blog/welcome"/>
+        <updated>2025-02-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to the PhD documentation blog. You can add short updates or notes here.]]></summary>
+        <content type="html"><![CDATA[<p>Welcome to the PhD documentation blog. You can add short updates or notes here.</p>]]></content>
+    </entry>
+</feed>
