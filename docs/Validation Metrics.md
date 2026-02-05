@@ -92,6 +92,9 @@ In the picture above positive threshold = 1 corresponds to the bottom-left corne
 **Random classifier**
 What if all the classifier just outputs is 0.5 regardless of input? At threshold 0-0.5 it will stay in the lower left corner (TPR = 0, FPR = 0). As soon as the threshold hits 0.5 it all samples will be classified as positive, TPR = 1 and FPR = 1. Draw a line between this points and you will have the y = x, and it will be a random classifier, have no info.
 
+**Area under the curve**
+If you measure the area under this curve it's a good measure to know how good the classifier is. A perfect classifier has area 1 and the random classifier is 0.5.
+
 
 ### Regression
 
@@ -120,9 +123,9 @@ $$
 
 
 ### Object detection
-The goal of an object detection model is to detect objects and put bounding boxes around each found object in a model. 
+The goal of an object detection model is to detect objects and put bounding boxes around each found object in a model. Each test sample then have a list of bounding boxes with four coordinates.
 
-![Alvis and Berzelius](./img/roc.png)
+# ![Alvis and Berzelius](./img/object_detect.jpg)
 
 **IoU (Intersection over Union)**
 Measures the overlap between two boundaries (the predicted bounding box and the ground truth bounding box). It is calculated as the area of overlap divided by the area of union.

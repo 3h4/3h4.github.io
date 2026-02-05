@@ -23,7 +23,9 @@ The network learns to map inputs to outputs by adjusting connection strengths (*
 A type of neural network designed for images and other grid-like data.  
 It learns filters "*convolutions*" to detect patterns such as edges, textures. The image gets transformers into tensors subsampled but increases the number of channels during processing. It ends with global average poling of the final tensor and then a fully connected layer for class prediction.
 
-
+<div className="img-row">
+![CNN animation](./img/cnn.gif)
+</div>
 
 ---
 
