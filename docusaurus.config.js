@@ -1,10 +1,13 @@
 // @ts-check
 import {themes as prismThemes} from 'prism-react-renderer';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'PhD Documentation',
-  tagline: 'Documentation and notes',
+  tagline: 'Image Processing',
+  favicon: 'img/favicon.svg',
 
   future: {
     v4: true,
@@ -23,6 +26,8 @@ const config = {
     locales: ['en'],
   },
 
+  stylesheets: [],
+
   presets: [
     [
       'classic',
@@ -31,6 +36,8 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/3h4/3h4.github.io/tree/main/',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
         blog: false,
         theme: {
@@ -44,8 +51,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'PhD Docs',
+        title: 'PhD Docs Vi3',
         logo: {
+          src: 'img/favicon.svg',
           href: '/docs/intro',
         },
         items: [
@@ -61,10 +69,6 @@ const config = {
             position: 'right',
           },
         ],
-      },
-      footer: {
-        style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} PhD Documentation. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
