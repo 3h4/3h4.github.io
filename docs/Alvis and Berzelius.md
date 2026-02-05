@@ -4,7 +4,10 @@ sidebar_position: 2
 
 # Alvis and Berzelius starter guide
 
-What is Alvis and Berzelius? They are supercomputers with many industry GPU:s installed for training neural networks. Please don't make our offices to saunas, it really pays off to learn to use them!
+What is Alvis and Berzelius? They are supercomputers with many industry GPU:s installed for training neural networks. Please don't make our offices to saunas, it really pays off to learn to use them! 
+
+If you feel bad about emissions etc, remember that these are tiny centers compared to the centers which trains huge LLM models,  it's really a rounding error. Despite this, as of 2026 AI share of total global emissions is around 0.5%. Also, the centers in Sweden run on 90% non-carbon electricity.
+
 
 
 1. You start on your computer 
